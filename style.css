@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+/* This code is for the styling of the naavigation bar */
+.main-nav {
+  margin: 0;
+  padding: 0;
+  display: block;
+  min-width: 100vw;
+  min-height: 10vh;
+  background-color: red;
+}
+
+.nav-options {
+  display: flex;
+  /* align-items: center; */
+  justify-content: right;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  margin: 0;
+}
+
+.nav-options li {
+  list-style: none;
+}
+/* End of navigation syling section*/
+
+/* This section is for the styling of the "Welcom section" */
+
+section .welcom-paragraph {
+  display: flex;
+  justify-content: right;
+  max-width: 33%;
+
+}
+
+
+
+
+footer div {
+  min-height: 10vh;
+  background-color: red;
+}
