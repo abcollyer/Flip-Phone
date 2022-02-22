@@ -11,12 +11,14 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
+  background-color: antiquewhite;
 }
 
 header {
   margin: 0;
   padding: 0;
 }
+
 /* This code is for the styling of the naavigation bar */
 .main-nav {
   margin: 0;
@@ -24,40 +26,54 @@ header {
   display: flex;
   flex-wrap: wrap;
   min-width: 100vw;
-  min-height: 10vh;
-  background-color: red;
+  min-height: 8vh;
+  background-color: grey;
 }
 
-h2, .main-nav {
+h2,
+.main-nav {
   margin: 0;
   padding: 0;
   align-items: center;
 }
 
-ul, .nav-options {
+ul,
+.nav-options {
   display: flex;
   gap: 1rem;
   padding: 1rem 1rem;
   margin: 0 0 0 auto;
-  
+
 }
 
 .nav-options li {
   list-style: none;
 }
+
 /* End of navigation syling section*/
 
 /* This section is for the styling of the "Welcom section" */
 
-section .welcom-paragraph {
+.main-content {
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcom-paragraph {
+  display: flex;
+  justify-content: center;
   max-width: 33%;
 
 }
 
 footer {
   margin-top: auto;
-  min-height: 10vh;
-  background-color: red;
+  min-height: 5vh;
+  background-color: grey;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
 }
