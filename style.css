@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -24,14 +28,15 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   min-width: 100vw;
   min-height: 8vh;
   background-color: grey;
+  position: fixed;
 }
 
-h2,
-.main-nav {
+.flip-phone-h2 {
   margin: 0;
   padding: 0;
   align-items: center;
@@ -41,8 +46,8 @@ ul,
 .nav-options {
   display: flex;
   gap: 1rem;
-  padding: 1rem 1rem;
-  margin: 0 0 0 auto;
+  align-items: center;
+
 
 }
 
@@ -58,13 +63,23 @@ ul,
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
-.welcom-paragraph {
+.main-content p {
   display: flex;
   justify-content: center;
   max-width: 33%;
 
+}
+
+.options-section {
+  display: flex;
+}
+
+.options-section p {
+  width: 33%;
+  flex-wrap: wrap;
 }
 
 footer {
