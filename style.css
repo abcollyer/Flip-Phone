@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: antiquewhite;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -30,14 +31,15 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 100vw;
+  min-width: 100%;
+  /* min-width: 100vw; */
   min-height: 8vh;
   background-color: grey;
   position: fixed;
 }
 
 .flip-phone-h2 {
-  margin: 0;
+  margin: 0 1rem;
   padding: 0;
   align-items: center;
 }
@@ -47,8 +49,8 @@ ul,
   display: flex;
   gap: 1rem;
   align-items: center;
-
-
+  padding: 0;
+  margin: 0 1rem;
 }
 
 .nav-options li {
@@ -75,10 +77,12 @@ ul,
 
 .options-section {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .options-section p {
   width: 33%;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
