@@ -17,6 +17,7 @@ body {
   padding: 0;
   background-color: antiquewhite;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
 }
 
 header {
@@ -77,12 +78,16 @@ ul,
 
 .options-section {
   display: flex;
+  min-height: 30rem;
   justify-content: space-evenly;
+  align-items: center;
+  margin: 0 1rem;
+  gap: 2rem;
+
 }
 
-.options-section p {
+.what-we-offer-p {
   width: 33%;
-  gap: 1rem;
   flex-wrap: wrap;
 }
 
