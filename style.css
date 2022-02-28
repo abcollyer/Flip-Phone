@@ -114,17 +114,27 @@ ul,
 }
 
 section .form-container {
-  display: flex;
-  justify-content: center;
-  width: 85%;
-  height: 200px;
+  /* display: flex;
+  justify-content: center; */
+  width: 60%;
+  /* height: 200px; */
   min-height: fit-content;
   border: 3px solid green;
   border-radius: 5px;
 }
 
-.form-container {
+textarea {
+  resize: none;
+}
 
+.form-group {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 80%
 }
 
 /* End of Form-section*/
@@ -141,4 +151,5 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 /* End of Footer */
