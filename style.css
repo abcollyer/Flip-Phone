@@ -78,6 +78,10 @@ ul,
 
 }
 
+/* End of "Welcom section" */
+
+/* This is the styling for the "Options section" */
+
 .options-section {
   display: flex;
   background-color: lightslategray;
@@ -99,13 +103,42 @@ ul,
   border-radius: 11px;
 }
 
+/* End of "Options section" */
+
+/* Styling for the Form-section*/
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+section .form-container {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 200px;
+  min-height: fit-content;
+  border: 3px solid green;
+  border-radius: 5px;
+}
+
+.form-container {
+
+}
+
+/* End of Form-section*/
+
+/* Footer */
 footer {
   margin-top: auto;
   min-height: 5vh;
   background-color: grey;
 }
 
+
 .footer-copyright {
   display: flex;
   justify-content: center;
 }
+/* End of Footer */
