@@ -81,27 +81,54 @@ ul,
 /* End of "Welcom section" */
 
 /* This is the styling for the "Options section" */
+/* Flex styling for the options-section */
 
-.options-section {
+/* .options-section {
   display: flex;
   background-color: lightslategray;
   border-radius: 5px;
   min-height: 30rem;
   justify-content: space-evenly;
   align-items: center;
-  /* margin: 0 1rem; */
   gap: 2rem;
+} */
 
-}
-
-.what-we-offer-p {
+/* .what-we-offer-p {
   width: 33%;
   background-color: aqua;
   flex-wrap: wrap;
   max-width: 22rem;
   padding: 1rem;
   border-radius: 11px;
+} */
+
+/* End of Flex styling for options-section */
+
+/* Grid styling for .options-section*/
+
+.options-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  margin: 1rem;
+
+
 }
+
+.what-we-offer-p {
+  background-color: aquamarine;
+  border-radius: 11px;
+  padding: 1rem;
+}
+
+.what-we-offer-p p,
+h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* End of Grid styling for .options-section */
 
 /* End of "Options section" */
 
