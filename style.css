@@ -9,7 +9,6 @@ html {
 }
 
 body {
-
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -133,6 +132,10 @@ h3 {
 /* End of "Options section" */
 
 /* Styling for the Form-section*/
+form {
+  width: 90%;
+}
+
 .form-section {
   display: flex;
   justify-content: center;
@@ -163,8 +166,22 @@ h3 {
   border-radius: 5px;
 }
 
-form {
-  width: 90%;
+.form-device-condition label {
+  margin: 0;
+}
+
+.form-radio {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* .form-device-condition label:not(:first-child) {
+  margin: 0 1rem 0 1rem;
+} */
+
+.form-radio input {
+  margin: 0;
+  padding: 0;
 }
 
 .form-button {
