@@ -166,13 +166,22 @@ form {
   border-radius: 5px;
 }
 
+.form-user-info input {
+  height: 30px;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
 .form-device-condition label {
   margin: 0;
 }
 
 .form-radio {
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 /* .form-device-condition label:not(:first-child) {
