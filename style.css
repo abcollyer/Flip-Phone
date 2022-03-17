@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: antiquewhite;
-  color: #2c485e;
+  color: black;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
 }
@@ -37,6 +37,7 @@ header {
   /* min-width: 100vw; */
   min-height: 8vh;
   background-color: grey;
+  color: aliceblue;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -70,8 +71,7 @@ ul,
   align-items: center;
   min-height: 100vh;
   background-color: #2c485e;
-
-  color: #2c485e;
+  color: aliceblue;
 
 }
 
@@ -79,7 +79,7 @@ ul,
   display: flex;
   justify-content: center;
   max-width: 45%;
-  background-color: beige;
+  background-color: darkcyan;
 
 }
 
@@ -115,7 +115,7 @@ ul,
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
-  margin: 1rem;
+  margin: 3rem 1rem 3rem 1rem;
 
 
 }
