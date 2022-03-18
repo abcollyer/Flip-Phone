@@ -65,7 +65,7 @@ ul,
 
 /* This section is for the styling of the "Welcom section" */
 
-.main-content {
+.main-content-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +73,14 @@ ul,
   background-color: #2c485e;
   color: aliceblue;
 
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: fit-content;
 }
 
 .main-content p {
