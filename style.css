@@ -1,3 +1,5 @@
+/*#2c302d*/
+
 * {
   box-sizing: border-box;
 }
@@ -134,6 +136,8 @@ ul,
   padding: 1rem;
   color: white;
 }
+
+.what-we-offer-p:hover {}
 
 .what-we-offer-p p,
 h3 {
