@@ -89,7 +89,7 @@ ul,
 .main-content p {
   display: flex;
   justify-content: center;
-  max-width: 45%;
+  max-width: 600px;
   background-color: darkcyan;
 
 }
@@ -124,10 +124,10 @@ ul,
 
 .options-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   column-gap: 30px;
   margin: 3rem 1rem 3rem 1rem;
-
+  min-width: 150px;
 }
 
 .what-we-offer-p {
@@ -135,6 +135,7 @@ ul,
   border-radius: 11px;
   padding: 1rem;
   color: white;
+  margin: 1rem 0 1rem 0;
 }
 
 .what-we-offer-p:hover {}
@@ -194,8 +195,10 @@ input::placeholder {
   font-size: 16px;
 }
 
+
 .form-device-condition label {
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .form-radio {
