@@ -115,14 +115,18 @@ ul,
 }
 
 .what-we-offer-p {
+  position: relative;
   background-color: #546243;
   border-radius: 11px;
   padding: 1rem;
   color: white;
   margin: 1rem 0 1rem 0;
+  transition: top ease 2s;
 }
 
-.what-we-offer-p:hover {}
+.what-we-offer-p:hover {
+  top: -10px;
+}
 
 .what-we-offer-p p,
 h3 {
