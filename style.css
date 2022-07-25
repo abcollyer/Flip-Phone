@@ -16,7 +16,7 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
@@ -72,6 +72,7 @@ ul,
 
 .nav-options li {
   list-style: none;
+  font-size: 18px;
 }
 
 /* End of navigation syling section*/
@@ -109,9 +110,10 @@ ul,
   display: flex;
   justify-content: center;
   max-width: 600px;
-  background-color: darkcyan;
+  background-color: #546243;
   margin: 0 1em 0 1em;
   padding: 1rem;
+  border-radius: 11px;
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
@@ -249,6 +251,7 @@ form {
 .about-owner {
   margin: 0.5rem;
   text-align: center;
+  color: white;
 }
 
 .about-owner p {
