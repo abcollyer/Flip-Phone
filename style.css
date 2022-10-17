@@ -16,7 +16,7 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color: white;
   color: black;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
@@ -37,22 +37,12 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   min-width: 100%;
+  /* min-width: 100vw; */
   min-height: fit-content;
   background-color: #546243;
   color: aliceblue;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
-
-@media screen and (max-width: 420px) {
-
-  .main-nav h2 {
-    font-size: 20px;
-  }
-
-  .nav-options li {
-    font-size: 14px;
-  }
 }
 
 .flip-phone-h2 {
@@ -72,7 +62,6 @@ ul,
 
 .nav-options li {
   list-style: none;
-  font-size: 18px;
 }
 
 /* End of navigation syling section*/
@@ -95,67 +84,50 @@ ul,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1000px;
+  max-width: 740px;
   /* min-width: fit-content; */
   /* max-width: 8rem; */
 }
 
-.main-content-h1 {
-  margin: 0 1em 0 1em;
-  padding: 1rem;
-  text-align: center;
-}
-
-.main-content-p {
+.main-content p {
   display: flex;
   justify-content: center;
   max-width: 600px;
-  background-color: #546243;
-  margin: 0 1em 0 1em;
-  padding: 1rem;
-  border-radius: 11px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
+  background-color: darkcyan;
 }
 
-@media only screen and (max-width: 768px) {
-  .main-content-h1 {
-    font-size: 20px;
+@media only screen and (max-width: 765px) {
+  .main-content {
+    max-width: 600px;
   }
 
-  .main-content-p {
+  .main-content h1 {
+    font-size: 20px;
+  }
+  .main-content p {
     max-width: 400px;
   }
 }
 
-@media only screen and (max-width: 480px) {
 
-  .main-content-p {
-    font-size: 16px;
-    line-height: 1.2;
-  }
-
-  .main-content-h1 {
-    font-size: 14px;
-  }
-}
 
 /* End of "Welcom section" */
+/* End of Flex styling for options-section */
+
+/* Grid styling for .options-section*/
 
 .options-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 /* Media query for options-section */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px)  {
 
-  .what-we-offer {
-    flex-direction: column;
-  }
+.what-we-offer {
+  flex-direction: column;
+}
 
 }
 
@@ -170,6 +142,7 @@ ul,
   column-gap: 30px;
   margin: 3rem 1rem 3rem 1rem;
   max-width: 1400px; */
+  /* End of Grid styling for .options-section */
 }
 
 .what-we-offer-p {
@@ -178,13 +151,12 @@ ul,
   border-radius: 11px;
   padding: 1rem;
   color: white;
+  /* margin: 1rem 0 1rem 0; */
   margin: 1rem;
-  transition: 0.3s;
 }
 
 .what-we-offer-p:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.75);
+  top: -10px;
 }
 
 .what-we-offer-p p,
@@ -193,36 +165,17 @@ h3 {
   justify-content: center;
   text-align: center;
 }
-
 /* End of "Options section" */
 
-/* Styling for the Form-section*/
-form {
-  width: 90%;
-}
-
-.form-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  max-height: fit-content;
-}
-
-@media only screen and (max-width:680px) {
-
-  .form-container {
-    width: 325px;
-  }
-}
-
-/* start of about owner section  */
+/* Start of owner-section */
 .owner-section {
-  background-color: #2c485e;
   min-height: 100vh;
+  background-color: #2c485e;
   display: flex;
 }
-
+.about-owner {
+ 
+}
 .who-i-am {
   display: flex;
   flex-direction: column;
@@ -230,18 +183,17 @@ form {
   align-items: center;
   max-width: 700px;
   margin: auto;
-  /* padding: 1rem; */
 }
 
 .who-i-am img {
-  max-width: 300px;
-  max-height: 300px;
+  height: 300px;
+  width: 300px;
   border-radius: 50%;
   border: solid 2px white;
   margin: 0.5rem;
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width: 680px) {
   .who-i-am img {
     max-width: 200px;
     max-height: 200px;
@@ -253,12 +205,32 @@ form {
   text-align: center;
   color: white;
 }
+/* End of owner-section */ 
 
-.about-owner p {
-  font-size: 18px;
+
+/* Styling for the Form-section*/
+form {
+  width: 90%;
 }
 
-/* end of about owner section */
+.form-section {
+
+
+  /* display: block;
+  margin: auto; */
+   
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width:680px)   {
+
+  .form-container {
+    width: 325px;
+  }
+}
 
 .form-container {
   display: flex;
@@ -303,6 +275,10 @@ input::placeholder {
   display: inline-block;
   margin-right: 1rem;
 }
+
+/* .form-device-condition label:not(:first-child) {
+  margin: 0 1rem 0 1rem;
+} */
 
 .form-radio input {
   margin: 0;
